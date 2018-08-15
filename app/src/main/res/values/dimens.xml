@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="medium_space">8dp</dimen>
+    <dimen name="large_space">16dp</dimen>
+    <dimen name="large_icon_size">72dp</dimen>
+    <dimen name="very_small_icon_size">24dp</dimen>
+    <dimen name="text_input_size">18sp</dimen>
+    <dimen name="note_desc_height">150dp</dimen>
+    <dimen name="small_icon_size">48dp</dimen>
+    <dimen name="medium_icon_size">56dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="empty_view_icon_size">96dp</dimen>
+</resources>

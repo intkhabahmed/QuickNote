@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">QuickNote</string>
+    <string name="permission_reason">Need this permission to draw the app over other apps</string>
+    <string name="empty_view_description">No notes to show, click \'+\' button to add a note</string>
+    <string name="note_title">Note Title</string>
+    <string name="description">Description</string>
+    <string name="description_hint">Description of note</string>
+    <string name="save">Save</string>
+    <string name="delete_note">Delete Note</string>
+    <string name="share_note">Share Note</string>
+    <string name="date_created">Created On</string>
+    <string name="delete_dialog_message">Do you want to delete it?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="unsaved_changes_dialog_message">Discard your changes and quit editing?</string>
+    <string name="unsaved_changes">Unsaved Changes</string>
+    <string name="note">Note</string>
+    <string name="hash_tag">HashTag (space separated)</string>
+    <string name="hashtags">HashTags</string>
+    <string name="close">x</string>
+    <string name="mandatory_fields">All fields are mandatory</string>
+    <string name="save_success">Note saved successfully!!</string>
+    <string name="update_success">Note updated successfully!!</string>
+    <string name="edit_text_width">15</string>
+</resources>

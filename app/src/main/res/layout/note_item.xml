@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/note_title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/medium_space"
+        android:layout_marginLeft="@dimen/large_space"
+        android:layout_marginRight="@dimen/medium_space"
+        android:layout_marginStart="@dimen/large_space"
+        android:layout_marginTop="@dimen/medium_space"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintEnd_toStartOf="@+id/date_created_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/date_created_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/large_space"
+        android:layout_marginRight="@dimen/large_space"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@color/secondaryTextColor"
+        app:layout_constraintBottom_toTopOf="@+id/note_title_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note_title_tv"
+        tools:text="@tools:sample/date/ddmmyy" />
+
+    <TextView
+        android:id="@+id/hash_tag_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_space"
+        android:textColor="@color/secondaryTextColor"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="@+id/note_title_tv"
+        app:layout_constraintTop_toBottomOf="@+id/note_title_tv"
+        tools:text="#Study" />
+
+    <TextView
+        android:id="@+id/note_description_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/medium_space"
+        android:layout_marginRight="@dimen/medium_space"
+        android:layout_marginTop="@dimen/medium_space"
+        android:textColor="@color/secondaryTextColor"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/date_created_tv"
+        app:layout_constraintStart_toStartOf="@+id/hash_tag_tv"
+        app:layout_constraintTop_toBottomOf="@+id/hash_tag_tv"
+        tools:text="This is the desciption of the note" />
+
+
+</android.support.constraint.ConstraintLayout>

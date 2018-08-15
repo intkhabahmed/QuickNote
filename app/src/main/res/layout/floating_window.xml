@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/floating_window_background"
+    android:padding="@dimen/large_space">
+
+    <TextView
+        android:id="@+id/app_title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/window_close_btn"
+        app:layout_constraintEnd_toStartOf="@+id/window_close_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/window_close_btn" />
+
+    <Button
+        android:id="@+id/window_close_btn"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="@dimen/small_icon_size"
+        android:layout_height="@dimen/small_icon_size"
+        android:text="@string/close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/note_title_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_space"
+        android:background="@drawable/edit_text_background"
+        android:ems="@string/edit_text_width"
+        android:hint="@string/note_title"
+        android:inputType="text|textPersonName"
+        android:padding="@dimen/large_space"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/window_close_btn" />
+
+
+    <EditText
+        android:id="@+id/hash_tag_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_space"
+        android:background="@drawable/edit_text_background"
+        android:ems="@string/edit_text_width"
+        android:hint="@string/hash_tag"
+        android:inputType="text|textPersonName"
+        android:padding="@dimen/large_space"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintEnd_toEndOf="@+id/note_title_input"
+        app:layout_constraintStart_toStartOf="@+id/note_title_input"
+        app:layout_constraintTop_toBottomOf="@+id/note_title_input" />
+
+
+    <EditText
+        android:id="@+id/note_description_input"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/note_desc_height"
+        android:layout_gravity="start"
+        android:layout_marginTop="@dimen/large_space"
+        android:background="@drawable/edit_text_background"
+        android:ems="@string/edit_text_width"
+        android:gravity="top|start"
+        android:hint="@string/description_hint"
+        android:inputType="textAutoComplete|textMultiLine|textLongMessage"
+        android:padding="@dimen/large_space"
+        android:textAlignment="textStart"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintEnd_toEndOf="@+id/hash_tag_input"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/hash_tag_input"
+        app:layout_constraintTop_toBottomOf="@+id/hash_tag_input" />
+
+    <Button
+        android:id="@+id/save_btn"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_space"
+        android:text="@string/save"
+        app:layout_constraintEnd_toEndOf="@+id/note_description_input"
+        app:layout_constraintStart_toStartOf="@+id/note_description_input"
+        app:layout_constraintTop_toBottomOf="@+id/note_description_input" />
+</android.support.constraint.ConstraintLayout>
